@@ -1,4 +1,2 @@
 # name: ID (first 12 chars)
 # comment's start the line with a # -> ignored
-
-jack: abcdefghijkl
