@@ -2,10 +2,11 @@ package yubikey
 
 import (
 	"fmt"
-	"github.com/jack073/mobile_kb_api/logger"
 	"io"
 	"os"
 	"strings"
+
+	"github.com/jack073/mobile_kb_api/logger"
 )
 
 type yubikey struct {

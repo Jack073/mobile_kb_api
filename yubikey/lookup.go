@@ -37,7 +37,7 @@ func init() {
 	}
 
 	if err = json.NewDecoder(f).Decode(config); err != nil {
-		panic(fmt.Errorf("unable to load APi keys: %w", err))
+		panic(fmt.Errorf("unable to load API keys: %w", err))
 	}
 }
 
@@ -121,7 +121,6 @@ func generateNonce() string {
 			out = make([]byte, 16)
 			hex.Encode(out, timeBytes[:])
 		}
-		fmt.Printf("%#v\n", out)
 		return string(out)
 	}
 
