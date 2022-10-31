@@ -37,7 +37,7 @@ func init() {
 	}
 
 	if err = json.NewDecoder(f).Decode(config); err != nil {
-		panic(fmt.Errorf("unable to load APi keys: %w", err))
+		panic(fmt.Errorf("unable to load API keys: %w", err))
 	}
 }
 
