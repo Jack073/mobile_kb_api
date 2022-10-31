@@ -121,7 +121,6 @@ func generateNonce() string {
 			out = make([]byte, 16)
 			hex.Encode(out, timeBytes[:])
 		}
-		fmt.Printf("%#v\n", out)
 		return string(out)
 	}
 
