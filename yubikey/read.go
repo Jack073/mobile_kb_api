@@ -51,6 +51,8 @@ func init() {
 	}
 }
 
+// CheckKey ensures the yubikey is known and
+// whitelisted before checking the OTP code.
 func CheckKey(key string) (string, bool) {
 	for _, k := range allowedYubikeys {
 		if k.id == key {
